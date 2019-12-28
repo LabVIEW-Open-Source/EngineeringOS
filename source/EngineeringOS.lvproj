@@ -11,6 +11,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="eos.lvlib" Type="Library" URL="../eos.lvlib"/>
+		<Item Name="tree_state_interface.vi" Type="VI" URL="../interfaces/tree_state_interface.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
