@@ -4,13 +4,21 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536895527</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="states" Type="Folder">
+	<Item Name="data" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="data.lvclass" Type="LVClass" URL="../interfaces/data/data.lvclass"/>
+		<Item Name="configData.lvclass" Type="LVClass" URL="../configData/configData.lvclass"/>
+		<Item Name="dependencyData.lvclass" Type="LVClass" URL="../dependencyData/dependencyData.lvclass"/>
+	</Item>
+	<Item Name="interfaces" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="state.lvclass" Type="LVClass" URL="../interfaces/state/state.lvclass"/>
-		<Item Name="core_state.lvclass" Type="LVClass" URL="../classes/states/core_state/core_state.lvclass"/>
-		<Item Name="unknown.lvclass" Type="LVClass" URL="../classes/states/unknown/unknown.lvclass"/>
+		<Item Name="initializable.lvclass" Type="LVClass" URL="../interfaces/initialization/initializable.lvclass"/>
+		<Item Name="configurable.lvclass" Type="LVClass" URL="../interfaces/configuration/configurable.lvclass"/>
+	</Item>
+	<Item Name="states" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="shuttingDown.lvclass" Type="LVClass" URL="../classes/states/shutting-down/shuttingDown.lvclass"/>
-		<Item Name="user-defined-state.lvclass" Type="LVClass" URL="../classes/states/user-defined-state/user-defined-state.lvclass"/>
 	</Item>
 	<Item Name="statemachine.lvclass" Type="LVClass" URL="../classes/statemachine/statemachine.lvclass"/>
 </Library>
